@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Player 10</title>
+<link rel="stylesheet" href="player.css">
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+<canvas id="particles"></canvas>
+<div class="player-container">
+  <video id="video"></video>
+  <div class="loader" id="loader"></div>
+  <div class="error" id="error">Erro ao carregar o vídeo</div>
+  <div class="controls">
+    <button id="play">▶</button>
+    <span id="time">00:00 / 00:00</span>
+    <input type="range" id="progress" value="0">
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    <button id="fullscreen">⛶</button>
+  </div>
+</div>
+<script>const HLS_LINK="SEU_HLS_10.m3u8";</script>
+<script src="player.js"></script>
+</body>
+</html>

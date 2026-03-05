@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Painel HLS</title>
+<link rel="stylesheet" href="hls.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+  <h1>🔐 Painel HLS</h1>
+  <p>Selecione uma chave para desbloquear</p>
+</header>
+
+<main class="grid">
+  <div class="card" onclick="openModal(1)">🔑 HLS 1</div>
+  <div class="card" onclick="openModal(2)">🔑 HLS 2</div>
+  <div class="card" onclick="openModal(3)">🔑 HLS 3</div>
+  <div class="card" onclick="openModal(4)">🔑 HLS 4</div>
+  <div class="card" onclick="openModal(5)">🔑 HLS 5</div>
+  <div class="card" onclick="openModal(6)">🔑 HLS 6</div>
+  <div class="card" onclick="openModal(7)">🔑 HLS 7</div>
+  <div class="card" onclick="openModal(8)">🔑 HLS 8</div>
+  <div class="card" onclick="openModal(9)">🔑 HLS 9</div>
+  <div class="card" onclick="openModal(10)">🔑 HLS 10</div>
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2 id="modalTitle">Digite a senha</h2>
+    <input type="password" id="passwordInput" placeholder="Senha da chave">
+    <button onclick="checkPassword()">Desbloquear</button>
+    <div class="loader" id="loader"></div>
+    <p id="error"></p>
+    <p id="tries"></p>
+  </div>
+</div>
+
+<script src="hls.js"></script>
+</body>
+</html>
